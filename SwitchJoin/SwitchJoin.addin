@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command SwitchJoin</Text>
+    <Description>Some description for SwitchJoin</Description>
+    <Assembly>SwitchJoin.dll</Assembly>
+    <FullClassName>SwitchJoin.Command</FullClassName>
+    <ClientId>1180de82-c1b0-4020-b073-643b6bbdad87</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application SwitchJoin</Name>
+    <Assembly>SwitchJoin.dll</Assembly>
+    <FullClassName>SwitchJoin.App</FullClassName>
+    <ClientId>f869a97f-cfc9-487e-9617-7a7042b0a012</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
