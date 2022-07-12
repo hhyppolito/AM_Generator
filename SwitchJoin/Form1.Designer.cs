@@ -68,9 +68,9 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.label1.Location = new System.Drawing.Point(46, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 13);
+            this.label1.Size = new System.Drawing.Size(182, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Insert join order (Only numbers 1-4)";
+            this.label1.Text = "Insert join order (Only numbers 1 to 4)";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -120,6 +120,7 @@
             this.textBeam.Name = "textBeam";
             this.textBeam.Size = new System.Drawing.Size(100, 20);
             this.textBeam.TabIndex = 7;
+            this.textBeam.Text = "1";
             // 
             // textColumn
             // 
@@ -127,6 +128,7 @@
             this.textColumn.Name = "textColumn";
             this.textColumn.Size = new System.Drawing.Size(100, 20);
             this.textColumn.TabIndex = 8;
+            this.textColumn.Text = "2";
             // 
             // textWall
             // 
@@ -134,6 +136,7 @@
             this.textWall.Name = "textWall";
             this.textWall.Size = new System.Drawing.Size(100, 20);
             this.textWall.TabIndex = 9;
+            this.textWall.Text = "3";
             // 
             // textFloor
             // 
@@ -141,6 +144,7 @@
             this.textFloor.Name = "textFloor";
             this.textFloor.Size = new System.Drawing.Size(100, 20);
             this.textFloor.TabIndex = 10;
+            this.textFloor.Text = "4";
             // 
             // Form1
             // 

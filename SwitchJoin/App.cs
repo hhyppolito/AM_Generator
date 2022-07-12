@@ -20,8 +20,8 @@ namespace SwitchJoin
             string curAssemblyPath = System.IO.Path.GetDirectoryName(curAssembly);
 
             //Ribbon tab creation
-            string thisNewTabName = "Henrique2";
-            string thisNewPanelName = "SwitchApp";
+            string thisNewTabName = "VE-Menu";
+            string thisNewPanelName = "Tools";
 
             try
             {
@@ -32,7 +32,7 @@ namespace SwitchJoin
             }
             //Button creation
             PushButtonData pb1 = new PushButtonData("Switch Join", "Switch Join", curAssembly, "SwitchJoin.Command");
-            pb1.LargeImage = new BitmapImage(new Uri(System.IO.Path.Combine(curAssemblyPath, "2.png")));
+            pb1.LargeImage = new BitmapImage(new Uri(System.IO.Path.Combine(curAssemblyPath, "switchjoin.ico")));
 
             //Add ribbon panel
             RibbonPanel curPanel = a.CreateRibbonPanel(thisNewTabName, thisNewPanelName);
