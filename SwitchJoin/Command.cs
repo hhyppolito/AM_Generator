@@ -25,10 +25,12 @@ namespace SwitchJoin
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
 
-            FilteredElementCollector wall = new FilteredElementCollector(doc).OfCategory(BuiltInCategory.OST_Walls).WhereElementIsNotElementType();
-            FilteredElementCollector floor = new FilteredElementCollector(doc).OfCategory(BuiltInCategory.OST_Floors).WhereElementIsNotElementType();
-            FilteredElementCollector beam = new FilteredElementCollector(doc).OfCategory(BuiltInCategory.OST_StructuralFraming).WhereElementIsNotElementType();
-            FilteredElementCollector column = new FilteredElementCollector(doc).OfCategory(BuiltInCategory.OST_StructuralColumns).WhereElementIsNotElementType();
+            Selection selection = uidoc.Selection;
+            ICollection<ElementId> selectedIds = selection.GetElementIds();
+            FilteredElementCollector wall = new FilteredElementCollector(doc, selectedIds).OfCategory(BuiltInCategory.OST_Walls).WhereElementIsNotElementType();
+            FilteredElementCollector floor = new FilteredElementCollector(doc, selectedIds).OfCategory(BuiltInCategory.OST_Floors).WhereElementIsNotElementType();
+            FilteredElementCollector beam = new FilteredElementCollector(doc, selectedIds).OfCategory(BuiltInCategory.OST_StructuralFraming).WhereElementIsNotElementType();
+            FilteredElementCollector column = new FilteredElementCollector(doc, selectedIds).OfCategory(BuiltInCategory.OST_StructuralColumns).WhereElementIsNotElementType();
 
 
 
