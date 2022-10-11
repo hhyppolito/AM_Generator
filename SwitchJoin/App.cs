@@ -9,7 +9,7 @@ using System.Windows.Media.Imaging;
 
 #endregion
 
-namespace SwitchJoin
+namespace AM_Gerator
 {
     internal class App : IExternalApplication
     {
@@ -31,7 +31,7 @@ namespace SwitchJoin
             {
             }
             //Button creation
-            PushButtonData pb1 = new PushButtonData("Switch Join", "Switch Join", curAssembly, "SwitchJoin.Command");
+            PushButtonData pb1 = new PushButtonData("Analytical Model", "Generator", curAssembly, "AM_Gerator.Command");
             pb1.LargeImage = new BitmapImage(new Uri(System.IO.Path.Combine(curAssemblyPath, "switchjoin.ico")));
 
             //Add ribbon panel
